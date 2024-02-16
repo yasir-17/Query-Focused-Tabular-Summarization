@@ -7,9 +7,15 @@ import nltk
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+huggingface_token = os.getenv("HUGGINGFACE_TOKEN")
 
 # If the dataset is gated/private, make sure you have run huggingface-cli login
-train_df, test_df = load_dataset("yale-nlp/QTSumm", token = "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", split = ["train", "test"])
+train_df, test_df = load_dataset("yale-nlp/QTSumm", token = huggingface_token, split = ["train", "test"])
 
 source_text = [
     f"query:  {query} header: {' '.join(map(str, entry.get('header', [])))} rows: {' '.join(map(str, entry.get('rows', [])))} title: {' '.join(map(str, entry.get('title', [])))}"
