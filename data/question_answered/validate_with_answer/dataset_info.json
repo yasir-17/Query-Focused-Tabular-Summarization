@@ -1,0 +1,114 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "qt_summ",
+  "dataset_size": 12389316,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/yale-nlp/QTSumm@9c4145c635dd9623ba2b62c8cbeab7df1f7441a8/qtsumm_train.json": {
+      "num_bytes": 20072385,
+      "checksum": null
+    },
+    "hf://datasets/yale-nlp/QTSumm@9c4145c635dd9623ba2b62c8cbeab7df1f7441a8/qtsumm_dev.json": {
+      "num_bytes": 4266848,
+      "checksum": null
+    },
+    "hf://datasets/yale-nlp/QTSumm@9c4145c635dd9623ba2b62c8cbeab7df1f7441a8/qtsumm_test.json": {
+      "num_bytes": 4420492,
+      "checksum": null
+    }
+  },
+  "download_size": 28759725,
+  "features": {
+    "row_ids": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "table": {
+      "header": {
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "_type": "Sequence"
+      },
+      "rows": {
+        "feature": {
+          "feature": {
+            "dtype": "string",
+            "_type": "Value"
+          },
+          "_type": "Sequence"
+        },
+        "_type": "Sequence"
+      },
+      "table_id": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "title": {
+        "dtype": "string",
+        "_type": "Value"
+      }
+    },
+    "summary": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "query": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "example_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "coordinates": {
+      "feature": {
+        "feature": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "_type": "Sequence"
+      },
+      "_type": "Sequence"
+    },
+    "answers": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 41149041,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 8639902,
+      "num_examples": 4981,
+      "dataset_name": "qt_summ"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 1856935,
+      "num_examples": 1052,
+      "dataset_name": "qt_summ"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 1892479,
+      "num_examples": 1078,
+      "dataset_name": "qt_summ"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

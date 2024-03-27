@@ -1,0 +1,68 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "row_ids": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "table": {
+      "header": {
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "_type": "Sequence"
+      },
+      "rows": {
+        "feature": {
+          "feature": {
+            "dtype": "string",
+            "_type": "Value"
+          },
+          "_type": "Sequence"
+        },
+        "_type": "Sequence"
+      },
+      "table_id": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "title": {
+        "dtype": "string",
+        "_type": "Value"
+      }
+    },
+    "summary": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "query": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "example_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "coordinates": {
+      "feature": {
+        "feature": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "_type": "Sequence"
+      },
+      "_type": "Sequence"
+    },
+    "answers": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}
