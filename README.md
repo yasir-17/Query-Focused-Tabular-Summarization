@@ -1,5 +1,5 @@
 # About Project Structure
-1) the data directory consists of the decomposed data obtained by passing the original data through the table-decomposition pipeline.
+1) The data directory consists of the decomposed data obtained by passing the original data through the table-decomposition pipeline.
 2) The models consists the code for fine tuning different models (T5, BART, OmniTab) and LLMS (GPT, Claude, Llama)
 3) We used fact extraction technique to provide the model with the extract facts based on user query and have utilized table question answering model TAPAS for this task.
 4) The table-decomposition directory consists the code for LLM based table decomposition which takes in original data and keeps only relevant data based on user query. 
